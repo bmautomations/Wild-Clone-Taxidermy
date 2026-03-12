@@ -16,7 +16,7 @@ const navLinks = [
       { label: "Tanning", path: "/services/tanning" },
       { label: "Dip & Pack", path: "/services/dip-pack" },
       { label: "Leather Worx", path: "/services/leatherworks" },
-      { label: "Wyldecraft", path: "/services/wyldecraft" },
+      { label: "Wylde Craft", path: "/services/wyldecraft" },
     ]
   },
   { label: "Blog", path: "/blog" },

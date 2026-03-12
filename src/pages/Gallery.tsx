@@ -24,8 +24,6 @@ const galleryImages = [
     { src: "/images/New Gallery Watermark Images/Untitled design (19).png", alt: "Gallery Mount 19" },
     { src: "/images/New Gallery Watermark Images/Wild Clone Brochure July 2025_Compressed(9).pdf (1).png", alt: "Gallery Feature 1" },
     { src: "/images/New Gallery Watermark Images/Wild Clone Brochure July 2025_Compressed(9).pdf (2).png", alt: "Gallery Feature 2" },
-    { src: "/images/New Gallery Watermark Images/Wild Clone Brochure July 2025_Compressed(9).pdf (3).png", alt: "Gallery Feature 3" },
-    { src: "/images/New Gallery Watermark Images/Wild Clone Brochure July 2025_Compressed(9).pdf (4).png", alt: "Gallery Feature 4" },
 ];
 
 const Gallery = () => {

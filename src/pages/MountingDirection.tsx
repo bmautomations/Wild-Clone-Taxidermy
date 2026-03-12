@@ -34,13 +34,13 @@ const Mounts = () => {
       </section>
 
       {/* Diagram */}
-      <section className="pb-16 bg-background">
+      <section className="pb-24 bg-background">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <AnimatedSection>
             <motion.div
               whileHover={{ scale: 1.01 }}
               transition={{ duration: 0.4 }}
-              className="rounded-2xl overflow-hidden"
+              className="rounded-2xl overflow-hidden mb-12"
             >
               <img
                 src="/images/diagram_inverted.jpg"
@@ -58,19 +58,29 @@ const Mounts = () => {
           <AnimatedSection>
             <div className="bg-card border border-border rounded-2xl p-8 lg:p-12 flex flex-col md:flex-row items-center justify-between gap-6 hover:border-gray-medium transition-colors duration-500">
               <div>
-                <h3 className="font-heading text-2xl font-bold text-foreground mb-2">Mounts Album</h3>
+                <h3 className="font-heading text-2xl font-bold text-foreground mb-2">Mounting Directions</h3>
                 <p className="font-body text-sm text-muted-foreground max-w-md">
-                  Browse our full collection of completed works in the Wild Clone Mounts Album. Download to view at your leisure.
+                  Download our field preparation guides to ensure your trophy arrives in perfect condition for mounting.
                 </p>
               </div>
-              <a
-                href="/MountsAlbum.pdf"
-                download="Wild Clone Mounts Album.pdf"
-                className="shrink-0 flex items-center gap-2 font-body text-sm px-8 py-4 bg-foreground text-background hover:bg-background hover:text-foreground border border-foreground transition-all duration-300 rounded"
-              >
-                <Download className="w-4 h-4" />
-                Download Mounts Album
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4 shrink-0">
+                <a
+                  href="/pdfs/Mounting Instructions.xlsx"
+                  download="Wild Clone Mounting Instructions.xlsx"
+                  className="flex items-center gap-2 font-body text-sm px-8 py-4 bg-foreground text-background hover:bg-background hover:text-foreground border border-foreground transition-all duration-300 rounded"
+                >
+                  <Download className="w-4 h-4" />
+                  Download Mounting Instructions
+                </a>
+                <a
+                  href="/pdfs/Mounting Directions.pdf"
+                  download="Wild Clone Mounting Directions.pdf"
+                  className="flex items-center gap-2 font-body text-sm px-8 py-4 bg-foreground text-background hover:bg-background hover:text-foreground border border-foreground transition-all duration-300 rounded"
+                >
+                  <Download className="w-4 h-4" />
+                  Download Mounting Directions
+                </a>
+              </div>
             </div>
           </AnimatedSection>
         </div>

@@ -92,7 +92,7 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "Industry-leading tanning chemicals",
       "Rigorous skin preparation and cleaning",
       "Export-ready treatment process",
-      "Suitable for mounting or display skins",
+
     ],
     image: "/images/tanning_service.jpg",
     customGallery: [
@@ -136,25 +136,29 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "Made-to-order, personalised service",
     ],
     customGallery: [
-      "/images/leatherworks_1.jpg",
-      "/images/leatherworks_2.jpg",
-      "/images/leatherworx_gunbag1.png",
-      "/images/leatherworx_gunbag2.png",
+      "/Leatherworx images/leatherworks_1.jpg",
+      "/Leatherworx images/leatherworks_2.jpg",
+      "/Leatherworx images/leatherworks_3.jpg",
+      "/Leatherworx images/leatherworx_gunbag1.png",
+      "/Leatherworx images/leatherworx_gunbag2.png",
+      "/Leatherworx images/leatherworks_1 2.jpg",
     ]
   },
   "wyldecraft": {
-    title: "Wyldecraft",
+    title: "Wylde Craft",
     subtitle: "Custom woodcraft to showcase your trophies",
     description: [
-      "Our Woodworking service produces handcrafted wooden pieces designed to complement and display your trophies. Every item is built to order by our skilled craftsmen using the finest local and imported timbers.",
-      "From custom trophy shields and plaques to full habitat bases, display furniture, and bespoke wooden frames, we create pieces that elevate your mount from a trophy into a centrepiece.",
-      "Each piece is finished to museum standards, with attention to grain, texture, and detail that sets Wild Clone woodwork apart from mass-produced alternatives.",
+      "Wylde Craft is Wild Clone's bespoke woodworking division — handcrafting statement furniture and display pieces that bring the spirit of the African wild into your home, lodge, or boardroom.",
+      "Every piece is built to order by our master craftsmen, using premium local and imported hardwoods. From custom poker tables crafted from genuine kudu and giraffe bone inlays to sleek glass-top coffee tables, slat shelving, and bedside pieces — each item is designed with intention and finished to exacting standards.",
+      "Wylde Craft pieces are more than furniture. They are conversation starters, heirlooms, and expressions of a lifestyle defined by adventure, craftsmanship, and connection to the wild.",
     ],
     highlights: [
-      "Custom trophy shields and mounting plaques",
-      "Handcrafted habitat bases for mounts",
-      "Display furniture and bespoke frames",
-      "Museum-quality finish using premium timbers",
+      "Bespoke poker and dining tables — 6 and 8-seater configurations",
+      "Giraffe and Kudu bone inlay statement pieces",
+      "Glass-top coffee tables and side tables",
+      "Bedside tables and decorative slatted shelving",
+      "Gun bags and custom safari accessories",
+      "Every piece built to order using premium hardwoods",
     ],
     leftImage: "/images/wyldecraft/giraffe_table.png",
     rightImage: "/images/wyldecraft/kudu_table.png",
@@ -208,7 +212,7 @@ const ServiceDetail = () => {
               <div className="flex justify-center mb-8">
                 <img
                   src="/images/wyldecraft/Wylde Craft Logo round Black SVG.svg"
-                  alt="Wyldecraft Logo"
+                  alt="Wylde Craft Logo"
                   className="h-32 w-32 md:h-40 md:w-40 object-contain invert"
                 />
               </div>

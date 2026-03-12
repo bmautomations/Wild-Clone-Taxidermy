@@ -18,21 +18,21 @@ const whyCards = [
     title: "Expert Craftsmanship",
     desc: "Our trophies are Crafted by artisans who live and breathe the wild. Where precision, artistry, and respect for the animal come together in every detail.",
     href: "/services/expert-craftsmanship",
-    image: "/images/New Gallery Watermark Images/buffalo.png",
+    image: "/EXPERT CRAFTMINSHIP CARD PHOTO.png",
   },
   {
     title: "Global Shipping",
     desc: "Bringing your trophies to any corner of the globe, with the same care, precision, and craftsmanship as in our studio.",
     href: "/services/global-shipping",
-    image: "/images/New Photos (Final)/truck.png",
-    imageClassName: "scale-[2] object-cover origin-center group-hover:scale-[2.15] translate-y-8",
+    image: "/images/truck_enhanced.png",
+    imageClassName: "object-cover group-hover:scale-110",
   },
   {
     title: "12 Month Taxidermy Completion",
     desc: "Guaranteed completion within 12 months after your deposit is received and mounting instructions are given.",
     href: "/services/turnaround-time-guarantee",
-    image: "/images/New Photos (Final)/Completion.png",
-    imageClassName: "scale-125 object-cover group-hover:scale-150 origin-center bg-black",
+    image: "/images/completion_enhanced.png",
+    imageClassName: "object-cover group-hover:scale-110",
   },
 ];
 
@@ -110,29 +110,14 @@ const Index = () => {
               Contact Us
             </Link>
             <Link
-              to="/gallery"
+              to="/services/professional-communication"
               className="font-body text-sm px-8 py-4 bg-transparent text-foreground border border-foreground rounded hover:bg-foreground hover:text-background transition-all duration-300 w-full sm:w-52 text-center"
             >
-              View Our Mounts
+              Outfitters Portal
             </Link>
           </motion.div>
         </motion.div>
 
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 1 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10"
-        >
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-            className="w-5 h-8 border-2 border-gray-medium rounded-full flex justify-center pt-1.5"
-          >
-            <motion.div className="w-1 h-1.5 bg-foreground rounded-full" />
-          </motion.div>
-        </motion.div>
       </section>
 
       {/* Why Hunters Choose Wild Clone */}
@@ -140,7 +125,7 @@ const Index = () => {
         <div className="container mx-auto px-6 lg:px-12">
           <AnimatedSection>
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground text-center mb-6">
-              What Makes Us Different
+              Our 4 Key Differentiators
             </h2>
             <p className="font-body text-sm text-muted-foreground text-center max-w-2xl mx-auto mb-16">
               From expert artisans to worldwide delivery, every step of our process is designed to exceed your expectations.

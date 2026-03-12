@@ -34,7 +34,7 @@ const services = [
     external: false,
   },
   {
-    title: "Wyldecraft",
+    title: "Wylde Craft",
     desc: "Handcrafted woodwork to mount, frame, and showcase your trophies. Custom shields, plaques, habitat bases and display furniture, built to the highest standard.",
     href: "/services/wyldecraft",
     external: false,

@@ -36,7 +36,7 @@ const TestimonialsSection = () => (
         <div className="bg-card border border-border rounded-2xl p-12 lg:p-16">
           <div className="text-center mb-16">
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-              About Wild Clone's Excellence
+              What Our Clients Say About Wildclone's Excellence
             </h2>
           </div>
 
@@ -70,13 +70,7 @@ const TestimonialsSection = () => (
               </motion.div>
             </div>
           </AnimatedSection>
-          <AnimatedSection delay={0.4}>
-            <div className="mt-16 flex justify-center">
-              <a href="/contact" className="font-body text-sm px-8 py-4 bg-foreground text-background hover:bg-background hover:text-foreground border border-foreground rounded transition-all duration-300">
-                Get a Quote
-              </a>
-            </div>
-          </AnimatedSection>
+
         </div>
       </AnimatedSection>
     </div>

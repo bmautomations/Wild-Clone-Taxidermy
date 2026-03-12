@@ -59,48 +59,11 @@ const Contact = () => {
 
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6 lg:px-12">
-          
-          <AnimatedSection>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-              <div className="bg-card border border-border rounded-xl p-6 text-center hover:border-gray-medium transition-colors">
-                <h3 className="font-heading text-xl font-bold text-foreground mb-2">Port Elizabeth</h3>
-                <p className="font-body text-sm text-muted-foreground">46 de Stades<br/>Colleen Glen<br/>Port Elizabeth</p>
-              </div>
-              <div className="bg-card border border-border rounded-xl p-6 text-center hover:border-gray-medium transition-colors">
-                <h3 className="font-heading text-xl font-bold text-foreground mb-2">North West</h3>
-                <p className="font-body text-sm text-muted-foreground">N4 Sterkstroom<br/>Polkadraaispruit<br/>Groot Marico</p>
-              </div>
-              <div className="bg-card border border-border rounded-xl p-6 text-center hover:border-gray-medium transition-colors">
-                <h3 className="font-heading text-xl font-bold text-foreground mb-2">Limpopo</h3>
-                <p className="font-body text-sm text-muted-foreground">5 Warmbad Weg Rd<br/>Thabazimbi</p>
-              </div>
-              <div className="bg-card border border-border rounded-xl p-6 text-center hover:border-gray-medium transition-colors">
-                <h3 className="font-heading text-xl font-bold text-foreground mb-2">Freestate</h3>
-                <p className="font-body text-sm text-muted-foreground">Kouter 568<br/>Hertzogville</p>
-              </div>
-            </div>
-            
-            <div className="text-center mb-16">
-              <div className="inline-flex flex-col md:flex-row items-center gap-6 md:gap-12 bg-gray-dark border border-border rounded-2xl p-8">
-                <div>
-                  <h4 className="font-heading text-sm text-gray-medium tracking-widest uppercase mb-2">Email Us</h4>
-                  <a href="mailto:customer.services@wildclone.com" className="font-body text-lg text-foreground hover:text-gray-light transition-colors">customer.services@wildclone.com</a>
-                </div>
-                <div className="hidden md:block w-px h-12 bg-border"></div>
-                <div>
-                  <h4 className="font-heading text-sm text-gray-medium tracking-widest uppercase mb-2">Call Us</h4>
-                  <div className="flex items-center gap-4">
-                    <a href="tel:+27605350791" className="font-body text-lg text-foreground hover:text-gray-light transition-colors">+27 (60) 535-0791</a>
-                    <span className="text-muted-foreground italic">or</span>
-                    <a href="tel:+27605350703" className="font-body text-lg text-foreground hover:text-gray-light transition-colors">+27 (60) 535-0703</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </AnimatedSection>
 
+          {/* Contact Form — first */}
           <AnimatedSection scale>
-            <div className="bg-card border border-border rounded-2xl p-8 lg:p-12 max-w-4xl mx-auto hover:border-gray-medium transition-colors duration-500">
+            <div className="bg-card border border-border rounded-2xl p-8 lg:p-12 max-w-4xl mx-auto hover:border-gray-medium transition-colors duration-500 mb-16">
+              <h2 className="font-heading text-3xl font-bold text-foreground mb-8 text-center">Send Us a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
@@ -186,6 +149,66 @@ const Contact = () => {
                   Submit Now
                 </motion.button>
               </form>
+            </div>
+          </AnimatedSection>
+
+          {/* Branch Cards + Contact Details — second */}
+          <AnimatedSection>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+              <div className="bg-card border border-border rounded-xl p-6 text-center hover:border-gray-medium transition-colors">
+                <h3 className="font-heading text-xl font-bold text-foreground mb-2">Port Elizabeth</h3>
+                <p className="font-body text-sm text-muted-foreground">46 de Stades<br/>Colleen Glen<br/>Port Elizabeth</p>
+              </div>
+              <div className="bg-card border border-border rounded-xl p-6 text-center hover:border-gray-medium transition-colors">
+                <h3 className="font-heading text-xl font-bold text-foreground mb-2">North West</h3>
+                <p className="font-body text-sm text-muted-foreground">N4 Sterkstroom<br/>Polkadraaispruit<br/>Groot Marico</p>
+              </div>
+              <div className="bg-card border border-border rounded-xl p-6 text-center hover:border-gray-medium transition-colors">
+                <h3 className="font-heading text-xl font-bold text-foreground mb-2">Limpopo</h3>
+                <p className="font-body text-sm text-muted-foreground">5 Warmbad Weg Rd<br/>Thabazimbi</p>
+              </div>
+              <div className="bg-card border border-border rounded-xl p-6 text-center hover:border-gray-medium transition-colors">
+                <h3 className="font-heading text-xl font-bold text-foreground mb-2">Freestate</h3>
+                <p className="font-body text-sm text-muted-foreground">Kouter 568<br/>Hertzogville</p>
+              </div>
+            </div>
+
+            <div className="text-center mb-16">
+              <div className="inline-flex flex-col md:flex-row items-center gap-6 md:gap-12 bg-gray-dark border border-border rounded-2xl p-8">
+                <div>
+                  <h4 className="font-heading text-sm text-gray-medium tracking-widest uppercase mb-2">Email Us</h4>
+                  <a href="mailto:customer.services@wildclone.com" className="font-body text-lg text-foreground hover:text-gray-light transition-colors">customer.services@wildclone.com</a>
+                </div>
+                <div className="hidden md:block w-px h-12 bg-border"></div>
+                <div>
+                  <h4 className="font-heading text-sm text-gray-medium tracking-widest uppercase mb-2">Call Us</h4>
+                  <div className="flex items-center gap-4">
+                    <a href="tel:+27605350791" className="font-body text-lg text-foreground hover:text-gray-light transition-colors">+27 (60) 535-0791</a>
+                    <span className="text-muted-foreground italic">or</span>
+                    <a href="tel:+27605350703" className="font-body text-lg text-foreground hover:text-gray-light transition-colors">+27 (60) 535-0703</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+        </div>
+      </section>
+
+      {/* Branch Map */}
+      <section className="pb-24 bg-background">
+        <div className="container mx-auto px-6 lg:px-12">
+          <AnimatedSection>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-4">Our Branches</h2>
+            <p className="font-body text-sm text-muted-foreground text-center max-w-lg mx-auto mb-10">
+              Wild Clone Taxidermy operates from multiple locations across South Africa.
+            </p>
+            <div className="rounded-2xl overflow-hidden border border-border">
+              <img
+                src="/wild clone map.png"
+                alt="Wild Clone Taxidermy Branch Locations"
+                className="w-full h-auto object-cover"
+              />
             </div>
           </AnimatedSection>
         </div>
