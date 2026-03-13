@@ -15,7 +15,7 @@ const mountTypes = [
         image: "/Shoulder Mounts/SHOULDER MOUNT ELAND.png",
     },
     {
-        title: "Custom / Full Mounts",
+        title: "Full Mounts / Combos",
         slug: "custom-mounts",
         desc: "A stunning, lifelike full-body display, often paired with custom-built habitat bases.",
         image: "/Custom Mounts/FULL MOUNT MOUNT - COMBO SHIEL IMPALA.png",

@@ -49,7 +49,7 @@ const mountData: Record<string, MountData> = {
     ],
   },
   "custom-mounts": {
-    title: "Custom / Full Mounts",
+    title: "Full Mounts / Combos",
     subtitle: "Complete, full-body artistry for the ultimate display.",
     description: [
       "Custom and full mounts bring the entire animal to life in a freestanding or wall-integrated display. These pieces are the pinnacle of taxidermy artistry, designed for collectors and lodges who demand the extraordinary.",
