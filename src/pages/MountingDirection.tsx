@@ -71,7 +71,7 @@ const Mounts = () => {
       </section>
 
       <section className="pb-24 bg-background">
-        <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
+        <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="flex flex-col gap-6 mb-12">
 
             {/* Top half — Shoulder Mount */}
@@ -80,13 +80,13 @@ const Mounts = () => {
                 <div className="px-6 pt-5 pb-3">
                   <p className="font-heading text-sm font-semibold text-muted-foreground uppercase tracking-widest text-center">Shoulder Mount</p>
                 </div>
-                {/* Show top half: container is 85% of the natural image area */}
-                <div className="relative overflow-hidden w-full" style={{ paddingBottom: "85%" }}>
+                {/* Show top half: container is 50% of the natural image height */}
+                <div className="relative overflow-hidden w-full" style={{ paddingBottom: "52%" }}>
                   <img
                     src="/images/diagram_inverted.jpg"
                     alt="Shoulder Mount Direction Diagram"
                     className="absolute inset-0 w-full"
-                    style={{ top: "0", height: "220%" }}
+                    style={{ top: "0", height: "200%" }}
                   />
                 </div>
               </div>
@@ -98,13 +98,13 @@ const Mounts = () => {
                 <div className="px-6 pt-5 pb-3">
                   <p className="font-heading text-sm font-semibold text-muted-foreground uppercase tracking-widest text-center">Wall Pedestal Mount</p>
                 </div>
-                {/* Show bottom half: push image up and increase height */}
-                <div className="relative overflow-hidden w-full" style={{ paddingBottom: "85%" }}>
+                {/* Show bottom half: push image up by 50% */}
+                <div className="relative overflow-hidden w-full" style={{ paddingBottom: "52%" }}>
                   <img
                     src="/images/diagram_inverted.jpg"
                     alt="Wall Pedestal Mount Direction Diagram"
                     className="absolute w-full"
-                    style={{ top: "-125%", height: "220%" }}
+                    style={{ top: "-100%", height: "200%" }}
                   />
                 </div>
               </div>
