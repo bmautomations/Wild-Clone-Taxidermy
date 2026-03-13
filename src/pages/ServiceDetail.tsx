@@ -146,11 +146,14 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "Handcrafted, Made-to-Order Designs",
     ],
     customGallery: [
-      "/Leatherworx images/leatherworks_1.jpg",
-      "/Leatherworx images/leatherworks_2.jpg",
-      "/Leatherworx images/leatherworks_3.jpg",
-      "/Leatherworx images/leatherworx_gunbag1.png",
-      "/Leatherworx images/leatherworx_gunbag2.png",
+      "/LEATHERWORX/LEATHER WORX.png",
+      "/LEATHERWORX/LEATHER WORX (1).png",
+      "/LEATHERWORX/LEATHER WORX (2).png",
+      "/LEATHERWORX/LEATHER WORX (3).png",
+      "/LEATHERWORX/LEATHER WORX (4).png",
+      "/LEATHERWORX/LEATHER WORX (5).png",
+      "/LEATHERWORX/LEATHER WORX (6).png",
+      "/LEATHERWORX/LEATHER WORX (7).png",
     ]
   },
   "wyldecraft": {
