@@ -6,7 +6,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 const faqItems = [
   {
     q: "How long does a taxidermy project take to complete?",
-    a: "Timelines depend on the complexity and type of mount. Trusted by Hunters Worldwide, our streamlined process ensures efficiency. Custom and full mounts may take longer. We'll provide a timeline estimate when you submit your order.",
+    a: "Wild Clone Taxidermy guarantees completion of all trophy mounts within 12 months from the date your trophies arrive at our facility and mounting instructions are confirmed. Our streamlined process and 14,000 sq ft facility ensure your trophies are handled with the care and efficiency they deserve — on time, every time.",
   },
   {
     q: "What do I need to do to preserve my animal before bringing it in?",

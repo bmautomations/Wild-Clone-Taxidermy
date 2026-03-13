@@ -1,9 +1,11 @@
 import { useParams, Link } from "react-router-dom";
+import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
 import CTABanner from "@/components/CTABanner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Lightbox from "@/components/Lightbox";
 
 
 
@@ -49,10 +51,11 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "The prices provided are per crate and includes all necessary documentation and fees associated with freight, clearance, export permits and applications. These prices apply only to shipments delivered to our nearest warehouse to you, as seen on the map, and do not include costs associated with onward shipping from our warehouse to your home address.",
     ],
     highlights: [
-      "Dedicated onsite global logistics company",
-      "Live tracking & low shipping costs",
-      "Per-crate pricing includes all clearance & permits",
-      "Delivery to your nearest global warehouse",
+      "Crating & Packing",
+      "International Freight",
+      "Permits & Export Documentation",
+      "Customs Clearance",
+      "Delivery to Warehouse",
     ],
     image: "/images/23FVknLJGGuivl7ZZLQFdiXZFbI.jpg",
     customGallery: [
@@ -66,7 +69,7 @@ const serviceData: Record<string, { title: string; subtitle: string; description
   },
   "turnaround-time-guarantee": {
     title: "12 Month Taxidermy Completion",
-    subtitle: "After deposit is received and mounting instructions are given",
+    subtitle: "After deposit is received and mounting instructions are confirmed",
     description: [
       "Wild Clone Taxidermy has a dedicated onsite global logistic company with 50+ offices around the world to ensure that when its time for your trophies to start their journey home, it is done in the most efficient way possible.",
       "30+ years of mastery ensure your trophies are in expert hands. Our vet-approved facilities ensure seamless imports and exports. Enjoy live tracking, low shipping costs, and guaranteed taxidermy completion in 12 months.",
@@ -184,6 +187,16 @@ const ServiceDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const service = slug ? serviceData[slug] : null;
 
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const openLightbox = useCallback((i: number) => setLightboxIndex(i), []);
+  const closeLightbox = useCallback(() => setLightboxIndex(null), []);
+
+  // Build lightbox image array from customGallery
+  const lightboxImages = (service?.customGallery ?? []).map((src, i) => ({
+    src,
+    alt: `${service?.title ?? ""} gallery image ${i + 1}`,
+  }));
+
   if (!service) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
@@ -277,11 +290,23 @@ const ServiceDetail = () => {
             <div className={`mt-12 ${slug === "wyldecraft" ? "columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6" : ["tanning", "dip-pack", "leatherworks", "global-shipping"].includes(slug || "") ? `grid grid-cols-1 sm:grid-cols-2 ${service.customGallery.length === 3 ? "lg:grid-cols-3" : service.customGallery.length === 2 ? "lg:grid-cols-2" : "lg:grid-cols-4"} gap-6` : "flex flex-col gap-8"}`}>
               {service.customGallery.map((src, i) => (
                 <AnimatedSection key={i} delay={i * 0.1} scale className={slug === "wyldecraft" ? "break-inside-avoid" : "h-full"}>
-                  <img src={src} className={`w-full ${slug === "wyldecraft" ? "h-auto object-contain" : "h-full aspect-[4/3] object-cover"} rounded-xl border border-border`} alt={`${service.title} custom gallery image ${i + 1}`} />
+                  <img
+                    src={src}
+                    onClick={() => openLightbox(i)}
+                    className={`w-full ${slug === "wyldecraft" ? "h-auto object-contain" : "h-full aspect-[4/3] object-cover"} rounded-xl border border-border cursor-zoom-in hover:opacity-90 transition-opacity duration-200`}
+                    alt={`${service.title} gallery image ${i + 1}`}
+                  />
                 </AnimatedSection>
               ))}
             </div>
           )}
+
+          <Lightbox
+            images={lightboxImages}
+            currentIndex={lightboxIndex}
+            onClose={closeLightbox}
+            onNavigate={setLightboxIndex}
+          />
         </div>
       </section>
 

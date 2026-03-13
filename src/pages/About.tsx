@@ -49,6 +49,13 @@ const About = () => {
           {/* Text */}
           <AnimatedSection direction="left">
             <div className="font-body text-sm text-muted-foreground leading-relaxed space-y-4 max-w-4xl mx-auto mb-16">
+              <div className="flex justify-center mb-8">
+                <img
+                  src="/Modernised Logo.png"
+                  alt="Wild Clone Taxidermy Logo"
+                  className="h-24 w-auto md:h-32 object-contain"
+                />
+              </div>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">Our Story</h2>
               <p>Wild Clone Taxidermy has created a close-knit family of artisans passionate about recreating the extraordinary animals our wonderful clients entrust us with. We have made some big investments to ensure that we can process everything in-house and future-proof the business.</p>
               <p>Our investments include a new 14,000 square feet facility in Port Elizabeth and two Treatment and Prep facilities to enable our clients easy access. This expands our facilities to 4 branches, located in Port Elizabeth, North West, Free State, and Limpopo.</p>
@@ -60,28 +67,7 @@ const About = () => {
             </div>
           </AnimatedSection>
 
-          {/* Photo Grid */}
-          <AnimatedSection delay={0.15}>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
-              {[
-                { src: "/images/about_1.jpg", alt: "Craftsmanship" },
-                { src: "/images/staff_1.jpg", alt: "Wild Clone team" },
-                { src: "/images/staff_2.jpg", alt: "Wild Clone team at work" },
-                { src: "/images/about_2.jpg", alt: "Facility details" },
-                { src: "/images/staff_3.jpg", alt: "Wild Clone artisan" },
-                { src: "/images/staff_4.jpg", alt: "Wild Clone craftsman" },
-                { src: "/images/about_3.jpg", alt: "Trophy preparation" },
-                { src: "/images/staff_5.jpg", alt: "Wild Clone craftsman with form" },
-              ].map((img, i) => (
-                <motion.div key={i} whileHover={{ scale: 1.03 }} transition={{ duration: 0.4 }} className="border border-border rounded-xl overflow-hidden cursor-pointer aspect-square">
-                  <img src={img.src} alt={img.alt} className="w-full h-full object-cover object-top" />
-                </motion.div>
-              ))}
-            </div>
-            <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.4 }} className="aspect-[21/9] border border-border rounded-xl overflow-hidden cursor-pointer">
-              <img src="/images/about_4.jpg" alt="Wild Clone Workshop" className="w-full h-full object-cover" />
-            </motion.div>
-          </AnimatedSection>
+
         </div>
       </section>
 

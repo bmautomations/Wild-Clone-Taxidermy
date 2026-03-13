@@ -14,6 +14,9 @@ const Blog = () => {
       <section className="pt-32 pb-16 bg-background">
         <div className="container mx-auto px-6 lg:px-12 text-center">
           <AnimatedSection>
+            <div className="flex justify-center mb-8">
+              <img src="/Modernised Logo.png" alt="Wild Clone Taxidermy Logo" className="h-24 w-auto md:h-32 object-contain" />
+            </div>
             <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold text-foreground tracking-tight mb-4">
               Our Blog
             </h1>
