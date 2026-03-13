@@ -151,7 +151,6 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "/Leatherworx images/leatherworks_3.jpg",
       "/Leatherworx images/leatherworx_gunbag1.png",
       "/Leatherworx images/leatherworx_gunbag2.png",
-      "/Leatherworx images/leatherworks_1 2.jpg",
     ]
   },
   "wyldecraft": {
