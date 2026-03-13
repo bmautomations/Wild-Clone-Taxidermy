@@ -81,13 +81,11 @@ const Mounts = () => {
                 <div className="px-6 pt-5 pb-3">
                   <p className="font-heading text-sm font-semibold text-muted-foreground uppercase tracking-widest text-center">Shoulder Mount</p>
                 </div>
-                {/* Show top half: container is 50% of the natural image height */}
-                <div className="relative overflow-hidden w-full" style={{ paddingBottom: "52%" }}>
+                <div className="relative w-full aspect-[4/3]">
                   <img
-                    src="/images/diagram_inverted.jpg"
+                    src="/new mounting directions/Untitled design (21).png"
                     alt="Shoulder Mount Direction Diagram"
-                    className="absolute inset-0 w-full"
-                    style={{ top: "0", height: "200%" }}
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>
@@ -99,13 +97,11 @@ const Mounts = () => {
                 <div className="px-6 pt-5 pb-3">
                   <p className="font-heading text-sm font-semibold text-muted-foreground uppercase tracking-widest text-center">Wall Pedestal Mount</p>
                 </div>
-                {/* Show bottom half: push image up by 50% */}
-                <div className="relative overflow-hidden w-full" style={{ paddingBottom: "52%" }}>
+                <div className="relative w-full aspect-[4/3]">
                   <img
-                    src="/images/diagram_inverted.jpg"
+                    src="/new mounting directions/Untitled design (22).png"
                     alt="Wall Pedestal Mount Direction Diagram"
-                    className="absolute w-full"
-                    style={{ top: "-100%", height: "200%" }}
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>
