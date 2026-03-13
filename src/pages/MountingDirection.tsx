@@ -36,6 +36,40 @@ const Mounts = () => {
         </motion.div>
       </section>
 
+      {/* Download CTA */}
+      <section className="pb-16 bg-background">
+        <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
+          <AnimatedSection>
+            <div className="bg-card border border-border rounded-2xl p-8 lg:p-12 flex flex-col items-center gap-6 hover:border-gray-medium transition-colors duration-500 text-center">
+              <div>
+                <h3 className="font-heading text-2xl font-bold text-foreground mb-2">Mounting Directions</h3>
+                <p className="font-body text-sm text-muted-foreground max-w-md mx-auto">
+                  Download our mounting instructions and direction documents to ensure your trophy is prepared and submitted correctly for the best possible result.
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="/pdfs/Mounting Instructions.xlsx"
+                  download="Wild Clone Mounting Instructions.xlsx"
+                  className="flex items-center gap-2 font-body text-sm px-8 py-4 bg-foreground text-background hover:bg-background hover:text-foreground border border-foreground transition-all duration-300 rounded"
+                >
+                  <Download className="w-4 h-4" />
+                  Download Mounting Instructions
+                </a>
+                <a
+                  href="/pdfs/Mounting Directions.pdf"
+                  download="Wild Clone Mounting Directions.pdf"
+                  className="flex items-center gap-2 font-body text-sm px-8 py-4 bg-foreground text-background hover:bg-background hover:text-foreground border border-foreground transition-all duration-300 rounded"
+                >
+                  <Download className="w-4 h-4" />
+                  Download Mounting Directions
+                </a>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* Diagram */}
       <section className="pb-24 bg-background">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
@@ -78,40 +112,6 @@ const Mounts = () => {
             </AnimatedSection>
 
           </div>
-        </div>
-      </section>
-
-      {/* Download CTA */}
-      <section className="pb-32 bg-background">
-        <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
-          <AnimatedSection>
-            <div className="bg-card border border-border rounded-2xl p-8 lg:p-12 flex flex-col items-center gap-6 hover:border-gray-medium transition-colors duration-500 text-center">
-              <div>
-                <h3 className="font-heading text-2xl font-bold text-foreground mb-2">Mounting Directions</h3>
-                <p className="font-body text-sm text-muted-foreground max-w-md mx-auto">
-                  Download our mounting instructions and direction documents to ensure your trophy is prepared and submitted correctly for the best possible result.
-                </p>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="/pdfs/Mounting Instructions.xlsx"
-                  download="Wild Clone Mounting Instructions.xlsx"
-                  className="flex items-center gap-2 font-body text-sm px-8 py-4 bg-foreground text-background hover:bg-background hover:text-foreground border border-foreground transition-all duration-300 rounded"
-                >
-                  <Download className="w-4 h-4" />
-                  Download Mounting Instructions
-                </a>
-                <a
-                  href="/pdfs/Mounting Directions.pdf"
-                  download="Wild Clone Mounting Directions.pdf"
-                  className="flex items-center gap-2 font-body text-sm px-8 py-4 bg-foreground text-background hover:bg-background hover:text-foreground border border-foreground transition-all duration-300 rounded"
-                >
-                  <Download className="w-4 h-4" />
-                  Download Mounting Directions
-                </a>
-              </div>
-            </div>
-          </AnimatedSection>
         </div>
       </section>
 

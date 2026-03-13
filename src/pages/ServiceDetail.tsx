@@ -14,7 +14,7 @@ const serviceData: Record<string, { title: string; subtitle: string; description
     title: "Cutting Edge Technology",
     subtitle: "Keeping you informed at every stage",
     description: [
-      "At Wild Clone, communication is at the heart of everything we do. We believe that every client deserves to be kept informed throughout the entire taxidermy process - from the moment your trophy arrives at our facility to the day it's shipped to your door.",
+      "At Wild Clone, communication is at the heart of everything we do. We believe that every client deserves to be kept informed throughout the entire taxidermy process - from the moment your trophy arrives at our facility to the day it's shipped to your door.", 
       "Our team provides real-time photo updates at every stage of the mounting process. You'll see your trophy as it progresses through preparation, sculpting, finishing, and final quality assurance.",
       "We use modern digital communication tools to ensure you're never left wondering about the status of your order. Whether you're across the country or across the globe, you're always connected to your trophy's journey.",
     ],

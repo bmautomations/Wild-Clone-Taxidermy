@@ -17,7 +17,7 @@ const galleryImages = [
     { src: "/images/New Gallery Watermark Images/Untitled design (9).png", alt: "Gallery Mount 9" },
     { src: "/images/New Gallery Watermark Images/Untitled design (12).png", alt: "Gallery Mount 12" },
     { src: "/images/New Gallery Watermark Images/Untitled design (13).png", alt: "Gallery Mount 13" },
-    { src: "/images/New Gallery Watermark Images/Untitled design (14).png", alt: "Gallery Mount 14" },
+    { src: "/new gallery.png", alt: "Gallery Mount 14" },
     { src: "/images/New Gallery Watermark Images/Untitled design (15).png", alt: "Gallery Mount 15" },
     { src: "/images/New Gallery Watermark Images/Untitled design (16).png", alt: "Gallery Mount 16" },
     { src: "/images/New Gallery Watermark Images/Untitled design (17).png", alt: "Gallery Mount 17" },

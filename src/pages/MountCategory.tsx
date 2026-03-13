@@ -173,8 +173,7 @@ const mountData: Record<string, MountData> = {
     finishingNote:
       "African 3D Shields are finished with hand-stitched leather edging and optional brass plaques engraved with hunt details, dates, and locations.",
     images: [
-      "/3d shields/AFRICAN 3D SHIELD (1).png",
-      "/3d shields/Untitled design (21).png"
+      "/3d shields/AFRICAN 3D SHIELD (1).png"
     ],
   },
 };

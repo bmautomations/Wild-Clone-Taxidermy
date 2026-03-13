@@ -109,12 +109,14 @@ const Index = () => {
             >
               Contact Us
             </Link>
-            <Link
-              to="/services/professional-communication"
+            <a
+              href="https://portal.wildclone.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-body text-sm px-8 py-4 bg-transparent text-foreground border border-foreground rounded hover:bg-foreground hover:text-background transition-all duration-300 w-full sm:w-52 text-center"
             >
               Outfitters Portal
-            </Link>
+            </a>
           </motion.div>
         </motion.div>
 
